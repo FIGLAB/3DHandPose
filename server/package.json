@@ -1,0 +1,44 @@
+{
+  "main": "src/index.tsx",
+  "scripts": {
+    "format": "npx prettier --write \"./**/*.{ts,tsx,js,jsx,json}\"",
+    "compile": "npx webpack",
+    "build": "npm run format && npm run compile",
+    "start": "bash start.sh"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "@typescript-eslint/eslint-plugin": "^2.19.2",
+    "@typescript-eslint/parser": "^2.19.2",
+    "css-loader": "^4.2.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "1.19.1",
+    "source-map-loader": "^0.2.4",
+    "ts-loader": "^6.2.1",
+    "typescript": "^4.0.2",
+    "webpack": "^4.41.6",
+    "webpack-cli": "^3.3.11"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.6",
+    "@types/node-fetch": "^2.5.7",
+    "@types/three": "^0.103.2",
+    "acorn": "^7.1.1",
+    "await-to-js": "^2.1.1",
+    "bootstrap": "^4.5.2",
+    "cancelable-promise": "^3.1.1",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "minimist": "^1.2.2",
+    "node-fetch": "^2.6.0",
+    "npyjs": "https://github.com/koreanwglasses/npyjs",
+    "react": "^16.12.0",
+    "react-bootstrap": "^1.3.0",
+    "react-dom": "^16.12.0",
+    "style-loader": "^1.2.1",
+    "three": "^0.117.1"
+  }
+}

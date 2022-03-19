@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">HandIK</string>
+    <string name="streamip">0.0.0.0</string>
+</resources>

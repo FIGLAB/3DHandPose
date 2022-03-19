@@ -1,0 +1,22 @@
+body {
+  background-color: #282c34;
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  font-size: 1.4em
+}
+
+p {
+	
+  text-align: left;
+}
+
+label {
+    display: inline-grid;
+    padding: 5px;
+}
+
+input {
+	margin: auto;
+}
+

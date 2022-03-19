@@ -1,0 +1,61 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+        externalNativeBuild {
+            cmake {
+                cppFlags ""
+            }
+        }
+    }
+    buildTypes {
+        release {
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+// Add a new configuration to hold your dependencies
+configurations {
+    myConfig
+}
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    implementation group: 'com.google.code.gson', name: 'gson', version: '2.8.6'
+    //myConfig group: 'com.google.code.gson', name: 'gson', version: '2.8.5'
+}
+
+//task copyLibs(type: Copy) {
+//    from configurations.myConfig
+//    into "libs"
+//}
+
+
+//preBuild.dependsOn copyLibs
+
+afterEvaluate {
+    assembleDebug.finalizedBy(exportJar)
+}
+
+task exportJar(type: Copy) {
+    from('build/intermediates/aar_main_jar/debug/classes.jar')
+    include('classes.jar')
+    into('../../../unityShowCase/Assets/Plugins/Android')
+    rename('classes.jar', 'CapImage.jar')
+}
+task deleteOldJar(type: Delete) {
+    delete '../../../unityShowCase/Assets/Plugins/Android/CapImage.jar'
+}
+exportJar.dependsOn(deleteOldJar)
+

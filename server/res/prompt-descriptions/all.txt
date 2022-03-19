@@ -1,0 +1,29 @@
+a Index finger down (with the palm NOT touching the screen)
+a-p Index finger down with the palm touching the screen
+b Thumb down (with the palm NOT touching the screen)
+b-p Thumb down with the palm touching the screen
+c Pinch gesture with the index finger and thumb (with the palm NOT touching the screen)
+c-p Pinch gesture with the index finger and thumb with the palm touching the screen
+d Grab gesture with index+middle finger and thumb (with the palm NOT touching the screen)
+e Grab gesture with all fingers - like grabbing a brick or LEGO block
+f Four fingers in a row  (with the palm NOT touching the screen)
+f-p Four fingers in a row with the palm touching the screen
+g All fingertips together (with the palm NOT touching the screen)
+g-p All fingertips together with the palm touching the screen
+h All fingertips apart (with the palm NOT touching the screen)
+h-p All fingertips apart with the palm touching the screen
+i Front of the all fingers but not the thumb touching (with the palm NOT touching the screen)
+i-p Front of all fingers but not the thumb touching with the palm touching the screen
+j All fingers flat down and close together (with the palm NOT touching the screen)
+j-p All fingers flat down and close together with the palm touching the screen
+k All fingers flat down and close together BUT the thumb facing outward w (with the palm NOT touching the screen)
+k-p All fingers flat down and close together BUT the thumb facing outward with the palm touching the screen
+l All finger flat and spread apart (with the palm NOT touching the screen)
+l-p All finger flat and spread apart with the palm touching the screen
+m Hand sideways only little finger touches (no palm)
+m-p Hand sideways (with the side of the palm down)
+n Hand sideways forming a corner
+o Hand sideways forming a circle
+p Fist down
+q Back of the hand touching
+r Palm down and fingers up
